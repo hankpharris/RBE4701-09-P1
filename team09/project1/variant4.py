@@ -22,10 +22,25 @@ g.add_monster(SelfPreservingMonster("aggressive", # name
 ))
 
 # TODO Add your character
-g.add_character(TestCharacter("me", # name
-                              "C",  # avatar
-                              0, 0  # position
+# g.add_character(TestCharacter("me", # name
+#                               "C",  # avatar
+#                               0, 0  # position
+# ))
+
+from character2 import Character2
+
+g.add_character(Character2("me", # name
+                           "C",  # avatar
+                           0, 0  # position
 ))
 
+# from interactivecharacter import InteractiveCharacter
+
+# g.add_character(InteractiveCharacter("me", # name
+#                                     "C",  # avatar
+#                                     0, 0  # position
+# ))
+
+
 # Run!
-g.go()
+g.go(0)

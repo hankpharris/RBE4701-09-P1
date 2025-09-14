@@ -26,10 +26,18 @@ g.add_monster(SelfPreservingMonster("aggressive", # name
                                     1             # detection range
 ))
 
-# TODO Add your character
-g.add_character(TestCharacter("me", # name
-                              "C",  # avatar
-                              0, 0  # position
+# # TODO Add your character
+# g.add_character(TestCharacter("me", # name
+#                               "C",  # avatar
+#                               0, 0  # position
+# ))
+
+
+from character2 import Character2
+
+g.add_character(Character2("me", # name
+                           "C",  # avatar
+                           0, 0  # position
 ))
 
 # Run!
