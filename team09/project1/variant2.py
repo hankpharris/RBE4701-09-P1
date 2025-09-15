@@ -34,4 +34,4 @@ g.add_character(Character1("me", # name
 ))
 
 # Run!
-g.go()
+g.go(1)
