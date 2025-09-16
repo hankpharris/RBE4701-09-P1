@@ -8,6 +8,8 @@ import random
 from game import Game
 from monsters.stupid_monster import StupidMonster
 
+from character1 import Character1
+
 # TODO This is your code!
 sys.path.insert(1, '../teamNN')
 from testcharacter import TestCharacter
@@ -21,10 +23,15 @@ g.add_monster(StupidMonster("stupid", # name
 ))
 
 # TODO Add your character
-g.add_character(TestCharacter("me", # name
-                              "C",  # avatar
-                              0, 0  # position
+# g.add_character(TestCharacter("me", # name
+#                               "C",  # avatar
+#                               0, 0  # position
+# ))
+
+g.add_character(Character1("me", # name
+                           "C",  # avatar
+                           0, 0  # position
 ))
 
 # Run!
-g.go()
+g.go(1)

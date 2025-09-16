@@ -7,13 +7,16 @@ sys.path.insert(1, '..')
 from game import Game
 
 # TODO This is your code!
-sys.path.insert(1, '../teamNN')
+sys.path.insert(1, '../team09')
 
 # Uncomment this if you want the empty test character
 #from testcharacter import TestCharacter
 
 # Uncomment this if you want the interactive character
-from interactivecharacter import InteractiveCharacter
+#from interactivecharacter import InteractiveCharacter
+
+# Import our A* character
+from character1 import Character1
 
 # Create the game
 g = Game.fromfile('map.txt')
@@ -27,9 +30,15 @@ g = Game.fromfile('map.txt')
 # ))
 
 # Uncomment this if you want the interactive character
-g.add_character(InteractiveCharacter("me", # name
-                                     "C",  # avatar
-                                     0, 0  # position
+# g.add_character(InteractiveCharacter("me", # name
+#                                      "C",  # avatar
+#                                      0, 0  # position
+# ))
+
+# Add our A* character
+g.add_character(Character1("me", # name
+                           "C",  # avatar
+                           0, 0  # position
 ))
 
 # Run!
